@@ -9,7 +9,7 @@
     var oilDiscount = Model.Discounts.SingleOrDefault(d => d.CategoryId == 5);
     if (oilDiscount != null)
     {
-        discount = oilDiscount.Discount;
+        discount = oilDiscount.Discount + 3;
     }
     var pathBase = ViewBag.PathBase;
 }
